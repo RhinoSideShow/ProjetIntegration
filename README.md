@@ -1,6 +1,11 @@
 #  ProjetIntegration
 ### Diego - Nicolas - Olivier - Arnaud - Gustavo - Alain
 
+***
+## Normes de programmation
+Les normes de programmation sont:
+
+***
 
 ## ProjetGo
 Le client ProjetGo est un organisme à but non lucratif qui aide les communautés à monter des projets collectifs au
