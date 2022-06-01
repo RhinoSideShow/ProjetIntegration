@@ -7,6 +7,7 @@
 ### - Alain Dominique Senatus - 
 
 ***
+
 ## Normes de programmation
 - Language: JavaScript
 - Library: React
@@ -76,6 +77,7 @@ Québec, ailleurs au Canada et à l’étranger. Le projet est né en réponse �
 compagnie GoFundMe et ProjetGo assure soutenir tout projet s’opposant à la tyrannie.
 But du projet : créer une application web, mobile ou de bureau, qui sera une vitrine pour lorganisme ProjetGo et
 ses réalisations et qui permettra la création de comptes utilisateurs et de projets.
+
 ### Les membres
 - Toute personne peut s’enregistrer comme membre.
 - Pour devenir membre, il faut payer une cotisation annuelle dont le montant.
@@ -85,6 +87,7 @@ adhésion, statut adhésion (peut être : actif, terminé, attente cotisation, g
 - Il y a aussi la possibilité d’être administrateur (tous les droits sur le site).
 - Il y a aussi la possibilité d’être bénévole. Un bénévole doit avoir les mêmes informations quun membre mais
 nest pas assujetti à une cotisation. Un bénévole peut s’inscrire à un projet, mais ne peut pas faire de don.
+
 ### Les projets
 - Seuls les membres en règle (qui ont payé leur cotisation) peuvent proposer à lorganisme des projets à financer.
 - Le projet est soumis au conseil dadministration pour approbation. Le conseil d’administration est composé
@@ -98,6 +101,7 @@ fonds amassés)
 des bénévoles participant au projet.
 3. Administrateurs et membre ayant créé le projet : Tout ce qui précède en plus d’options permmettant de
 modifier les informations du projet, ou même de le supprimer.
+
 ### Les dons
 - Toute personne peut faire un don pour aider le projet de son choix.
 - Un formulaire permet de faire un don en remplissant les informations suivantes : date don, montant du
