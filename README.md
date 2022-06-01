@@ -1,9 +1,17 @@
-#  ProjetIntegration
-### Diego - Nicolas - Olivier - Arnaud - Gustavo - Alain
+#  Projet d'integration
+### - Diego Eugenio Bayancela - 
+### - Nicolas Bergeron - 
+### - Olivier Lamoureux-Vaillancourt -  
+### - Arnaud Provencal - 1106640
+### - Gustavo Adolfo Roldan - 
+### - Alain Dominique Senatus - 
 
 ***
 ## Normes de programmation
-Les normes de programmation sont:
+- Language: JavaScript
+- Library: React
+- FrameWork: Next.js
+
 
 ***
 
