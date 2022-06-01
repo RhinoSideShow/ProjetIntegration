@@ -1,7 +1,7 @@
 #  Projet d'integration
 ### - Diego Eugenio Bayancela - 
 ### - Nicolas Bergeron - 1358189
-### - Olivier Lamoureux-Vaillancourt -  
+### - Olivier Lamoureux-Vaillancourt - 1554394
 ### - Arnaud Provencal - 1106640
 ### - Gustavo Adolfo Roldan - 
 ### - Alain Dominique Senatus - 
