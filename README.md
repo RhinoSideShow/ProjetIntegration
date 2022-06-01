@@ -16,7 +16,8 @@
 
 ### Recommandation générale 
 On permet n'importe quelle violation du guide si elle augmente la lisibilité. Le but principal de la recommandation est d'améliorer la lisibilité et de ce fait l'organisation et la qualité générale du code. Il est impossible de couvrir tous les cas spécifiques d'un guide général et le programmeur doit être flexible. Le lecteur est invité à faire montre de jugement. Si une pratique est inutile, inapplicable, voire contreproductive au regard des contraintes d'un projet ou des objectifs corporatifs, soyons assez intelligents pour y déroger.
-Conventions de nomenclature 
+
+### Conventions de nomenclature 
 Nous énumérons ici les règles à suivre pour assurer la lisibilité et la cohérence pour tous les noms que vous donnerez à vos variables, classes, etc.
 
 ### Nommer une variable :  
@@ -25,8 +26,9 @@ Nous énumérons ici les règles à suivre pour assurer la lisibilité et la coh
  - Le nom doit être unique à l'intérieur de sa portée
  - Le nom doit être significatif et explicite; 
  - Des abréviations peuvent être utilisées, mais elles doivent êtres explicites
- - Bons exemples : age, prenom, montant_total, nombre_lignes_vides, nb_lignes_vides 
- - Mauvais exemples : a, pnom, montanttotal, NombreLignesVides, nbr_lg_vds
+ - <span style = "color:green"> Bons exemples : age, prenom, montant_total, nombre_lignes_vides, nb_lignes_vides </span> 
+ - <span style = "color:red"> Mauvais exemples : a, pnom, montanttotal, NombreLignesVides, nbr_lg_vds </span>
+ - <mark> Exemples préférés: montant_total, nombre_lignes_vides etc.</mark>
 
 ### Nom des constantes 
 - Le nom doit être significatif et explicite ; 
@@ -34,9 +36,9 @@ Nous énumérons ici les règles à suivre pour assurer la lisibilité et la coh
 - Le caractère _ (souligné) doit être utilisé pour séparer les mots ; 
 - Les caractères accentués (É, À, Ê, Ç, etc.) peuvent être utilisés ou non ; 
 - Des abréviations peuvent être utilisées, mais elles doivent êtres explicites.
-- Bons exemple: PI, TPS, POURCENTAGE_POURBOIRE, ADRESSE_DEPART_CELLULE, ADR_DEPART_CELL 
-- Mauvais exemples : P, tps, PourcentagePourboire, ADRESSEDEPARTCELLULE, ADR_DPT_CL
-
+- <span style = "color:green"> Bons exemple: PI, TPS, POURCENTAGE_POURBOIRE, ADRESSE_DEPART_CELLULE, ADR_DEPART_CELL </span>
+- <span style = "color:red"> Mauvais exemples : P, tps, PourcentagePourboire, ADRESSEDEPARTCELLULE, ADR_DPT_CL </span>
+- <mark> Exemples préférés: POURCENTAGE_POURBOIRE, ADRESSE_DEPART_CELLULE etc.</mark>
 
 ### Nom des classes et des sous-classes
 - Les mêmes règles au nom des classes et des sous-classes qu’au nom des variables et des constantes. Plus, nous ajoutons les règles suivantes :
@@ -45,8 +47,9 @@ Nous énumérons ici les règles à suivre pour assurer la lisibilité et la coh
 - Le caractère _ (souligné) doit être utilisé pour séparer les mots ; 
 - Les caractères accentués (é, à, ê, ç, etc.) peuvent être utilisés ou non ; 
 - Des abréviations peuvent être utilisées, mais elles doivent êtres explicites.
-- Bons exemples : Afficher_Infos Calculer_Coordonnées Est_Impair Est_Une_Lettre Sinus 
-- Mauvais exemples : Afficher Calculer afficherinfos CalculerCoordonnées Fonction_2
+- <span style = "color:green"> Bons exemples : Afficher_Infos Calculer_Coordonnées Est_Impair Est_Une_Lettre Sinus </span>
+- <span style = "color:red"> Mauvais exemples : Afficher Calculer afficherinfos CalculerCoordonnées Fonction_2 </span>
+- <mark> Exemples préférés : Afficher_Infos, Calculer_Coordonnées etc </mark>
 
 ### Indentation et aération du code source 
 - L’indentation et l’aération du code source sont essentielles pour que le code source soit lisible par un être humain. L’indentation représente l’espace laissé entre la marge de gauche et le début de la ligne de code. 
