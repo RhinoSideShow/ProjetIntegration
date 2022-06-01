@@ -15,3 +15,11 @@
 
 ***
 ### 2022-06-1
+- Diriger le scrum </br>
+  &nbsp;&nbsp;&nbsp;&nbsp; Verifier BD pour integration<br/>
+  &nbsp;&nbsp;&nbsp;&nbsp; Terminer les UML<br/>
+  &nbsp;&nbsp;&nbsp;&nbsp; Prise du RDV pour le 3e scrum le 2022-06-2</br>
+
+***
+
+### 2022-06-2
