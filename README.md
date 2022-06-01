@@ -4,7 +4,7 @@
 ### - Olivier Lamoureux-Vaillancourt - 1554394
 ### - Arnaud Provencal - 1106640
 ### - Gustavo Adolfo Roldan - 6172781
-### - Alain Dominique Senatus - 
+### - Alain Dominique Senatus - 1159429 
 
 ***
 
