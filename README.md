@@ -1,6 +1,19 @@
-#  ProjetIntegration
-### Diego - Nicolas - Olivier - Arnaud - Gustavo - Alain
+#  Projet d'integration
+### - Diego Eugenio Bayancela - 
+### - Nicolas Bergeron - 
+### - Olivier Lamoureux-Vaillancourt -  
+### - Arnaud Provencal - 1106640
+### - Gustavo Adolfo Roldan - 
+### - Alain Dominique Senatus - 
 
+***
+## Normes de programmation
+- Language: JavaScript
+- Library: React
+- FrameWork: Next.js
+
+
+***
 
 ## ProjetGo
 Le client ProjetGo est un organisme à but non lucratif qui aide les communautés à monter des projets collectifs au
