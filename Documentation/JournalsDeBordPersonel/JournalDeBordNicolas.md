@@ -9,7 +9,7 @@
 - Debut du UML afin de nous donner une idee de la charge de travail a repartir.<br>
 - Faite une maquette pour la page de login<br>
 
-####Maquette
+#### Maquette
 <img src="imageJournalNicolas/Login.JPG" width="900" height="500">
 
 ***
