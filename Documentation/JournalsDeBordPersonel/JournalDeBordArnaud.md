@@ -10,7 +10,7 @@
   &nbsp;&nbsp;&nbsp;&nbsp;Prise du RDV pour le 2e scrum le 2022-06-1<br>
 - Creation du depot Git, ajout des contributeurs,Creation de la branche production et mark down du projet choisi dans le ReadMe<br>
 - Debut du UML afin de nous donner une idee de la charge de travail a repartir.<br>
-- ![Photo](UmlBaseProjet Int)
+
 
 
 ***
