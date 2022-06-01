@@ -1,9 +1,9 @@
 #  Projet d'integration
-### - Diego Eugenio Bayancela - 
+### - Diego Eugenio Bayancela - 0612672
 ### - Nicolas Bergeron - 1358189
 ### - Olivier Lamoureux-Vaillancourt - 1554394
 ### - Arnaud Provencal - 1106640
-### - Gustavo Adolfo Roldan - 
+### - Gustavo Adolfo Roldan - 6172781
 ### - Alain Dominique Senatus - 
 
 ***
