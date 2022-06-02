@@ -10,13 +10,11 @@
 - Faite une maquette pour la page de login.<br>
 
 #### Maquette
-<img src="Image\ImageJournalNicolas\Login.JPG" width="800" height="500" alt="Login">
+<img src="Image\Image_Journal_Nicolas\Login.JPG" width="800" height="500" alt="Login">
 
 ---
 
 ### 2022-06-01
-
----
 
 - Participer au scrum afin de mettre en oeuvre le sprint 0 (La phase de planification).<br>
 - Finir du UML afin de nous donner une idee de la charge de travail a repartir.<br>
@@ -25,10 +23,3 @@
 ---
 
 ### 2022-06-02
-
----
-
-
----
-
-### 2022-06-03
