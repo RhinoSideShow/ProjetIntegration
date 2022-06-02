@@ -10,7 +10,7 @@
 - Faite une maquette pour la page de login.<br>
 
 #### Maquette
-<img src="Image\Image_Journal_Nicolas\Login.JPG" width="800" height="500" alt="Login">
+<img src="Image\image_journal_Nicolas\Login.JPG" width="800" height="500" alt="Login">
 
 ---
 
