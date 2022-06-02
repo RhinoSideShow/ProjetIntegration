@@ -19,28 +19,32 @@ export default function login() {
                                 <h1>Membres ProjetGO</h1>
                                 <h2>Bienvenue</h2>
 
-                                <form action="/my-handling-form-page" method="post">
-
+                                <form className={styles.Form} action="/my-handling-form-page" method="post">
 
                                 <li>
                                     <label className={styles.form} for="nom">Nom :</label>
                                     <input className={styles.button} type="text" id="nom" name="user_nom"></input>
+                                    <br/><br/>
                                 </li>
                                 <li>
                                     <label className={styles.label} for="prenom">Prénom </label>
                                     <input className={styles.button} type="text" id="prenom" name="user_prenom"></input>
+                                    <br/><br/>
                                 </li>
                                 <li>
                                     <label className={styles.label} for="email">Email </label>
                                     <input className={styles.button} type="text" id="email" name="user_email"></input>
+                                    <br/><br/>
                                 </li>
                                 <li>
                                     <label for="telephone">Téléphone </label>
                                     <input type="text" id="telephone" name="user_telephone"></input>
+                                    <br/><br/>
                                 </li>
                                 <li>
                                     <label for="adresse">Adresse </label>
                                     <input type="text" id="adresse" name="user_adresse"></input>
+                                    <br/><br/>
                                 </li>
                              
                                 <li>
