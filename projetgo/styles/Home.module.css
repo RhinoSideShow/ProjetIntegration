@@ -81,3 +81,29 @@
     padding: 0 10px;
 }
 
+.Form {
+    /* Center the form on the page */
+    margin: 0 auto;
+    width: 400px;
+    /* Form outline */
+    padding: 1em;
+    border: 1px solid #CCC;
+    border-radius: 1em;
+  }
+
+  .Ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .Form li + li {
+    margin-top: 1em;
+  }
+  
+  .Label {
+    /* Uniform size & alignment */
+    display: inline-block;
+    width: 90px;
+    text-align: right;
+  }
