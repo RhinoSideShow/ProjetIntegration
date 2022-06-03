@@ -19,23 +19,23 @@ export default function login() {
 
                                 
                                     <label className={styles.label} for="nom"></label>
-                                    <input className={styles.Input} type="text" id="nom" name="user_nom" value="Nom"></input>
+                                    <input className={styles.Input} type="text" id="nom" name="user_nom" placeholder="Nom"></input>
                                     <br/><br/>
                                 
                                     <label className={styles.label} for="prenom"></label>
-                                    <input className={styles.Input} type="text" id="prenom" name="user_prenom" value="Prenom"></input>
+                                    <input className={styles.Input} type="text" id="prenom" name="user_prenom" placeholder="Prenom"></input>
                                     <br/><br/>
                                 
                                     <label className={styles.label} for="email"></label>
-                                    <input className={styles.Input} type="text" id="email" name="user_email" value="Email"></input>
+                                    <input className={styles.Input} type="text" id="email" name="user_email" placeholder="Email"></input>
                                     <br/><br/>
                                 
                                     <label for="telephone"> </label>
-                                    <input className={styles.Input} type="text" id="telephone" name="user_telephone" value="Téléphone"></input>
+                                    <input className={styles.Input} type="text" id="telephone" name="user_telephone" placeholder="Téléphone 000 000 0000"></input>
                                     <br/><br/>
                                 
                                     <label for="adresse"> </label>
-                                    <input className={styles.Input}  type="text" id="adresse" name="user_adresse" value="Adresse"></input>
+                                    <input className={styles.Input}  type="text" id="adresse" name="user_adresse" placeholder="Adresse"></input>
                                     <br/><br/>
                                 
 
