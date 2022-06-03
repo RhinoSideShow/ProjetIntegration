@@ -13,3 +13,7 @@
 
 ### Diagramme de cas(UML)
   <img src="Image\image_journal_Olivier\Uml_diagramme_de_cas_Olivier.png" width="900" height="500" alt="diagramme">
+
+### 2022-06-02
+-Participer au scrum : planifier les sprints avec le scrum master et regarder les UML (correction et discussion en groupe).<br>
+-Début du front end pour la page d'accueil.<br>
