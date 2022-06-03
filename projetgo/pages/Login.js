@@ -7,6 +7,11 @@ export default function Login() {
     // aide a changer URL dans la fonction onClick des button.
     const router = useRouter();
 
+    //change le URL quand les terms of service sont clicker.
+    const handleOnClickTerms = () =>{
+        router.push('/').then(r => r)
+    }
+
     return (
         <>
             <div id="__next" className={styles.DivContainer}>
@@ -38,7 +43,9 @@ export default function Login() {
                                 <p className={styles.TextAccount}>Vous n'avez pas de compte ?</p>
 
                                 <button className={styles.ButtonLoginSignIn} onClick={() => router.push('/')}>S'inscrire</button>
-                                <p className={styles.Mini}>En vous inscrivant, vous acceptez les conditions d'utilisation et </p><p className={styles.Mini}>la confidentialité Politique, y compris l'utilisation des cookies.</p>
+                                <p className={styles.Mini}>En vous inscrivant, vous acceptez les <a onClick={handleOnClickTerms}>conditions d'utilisation</a> et
+                                </p><p className={styles.Mini}>la <a onClick={handleOnClickTerms}>Politique de Confidentialité</a>,
+                                incluant l'<a onClick={handleOnClickTerms}>utilisation des cookies</a>.</p>
                             </div>
                         </div>
                     </div>
