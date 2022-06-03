@@ -6,56 +6,70 @@
 }
 
 .DivSousContainer {
-    width: 50%;
+    width: 35%;
+    min-width: 900px;
+    max-width: 900px;
+    min-height: 900px;
+    max-height: 900px;
+
     display: flex;
     justify-content: center;
     background-color: black;
+    margin: 5%;
+    border-radius: 40px;
+}
+
+.DivImageLogo {
+    height: 120px;
+    width: 120px;
+    justify-content: center;
+}
+
+/***********Login*************/
+
+.DivSousSousContainerLogin{
+    width: 100%;
+    justify-content: center;
 }
 
 .DivText {
     flex: 1;
     text-align: center;
-    margin-top: 30%;
-    margin-left: 10%;
+    margin-left: 20%;
     padding-left: 30%;
-    width: 120%;
+    width: 70%;
 }
 
 .DivImage {
     flex:0 0 90%;
-    margin-left: -75%;
-}
-
-.DivImageLogo {
-    height: 170px;
-    width: 170px;
-    margin-left: -65%;
-    margin-top: -25%;
-    margin-bottom: 25%;
 }
 
 .Image {
     float:left;
-    width: 520px;
-    height: 1040px;
+    width: 400px;
+    height: 900px;
+    border-top-left-radius: 40px;
+    border-bottom-left-radius: 40px;
+}
+.ButtonLogin {
+    border-radius: 20px;
+    font-size: 20px;
+    padding: 10px 35px;
+    background-color: #0272fc;
+    color: white;
+    width: 80%;
+    margin-bottom: 5%;
+    margin-top: 10%;
 }
 
-.Button {
-    border-radius: 15px;
+.ButtonLoginSignIn {
+    border-radius: 20px;
     font-size: 20px;
-    padding: 7px 35px;
+    padding: 10px 35px;
     background-color: #0272fc;
     color: white;
-    width: 100%;
-}
-.ButtonSignIn {
-    border-radius: 15px;
-    font-size: 20px;
-    padding: 7px 35px;
-    background-color: #0272fc;
-    color: white;
-    width: 100%;
-    margin-top: 40px;
+    width: 80%;
+    margin-bottom: 5%;
 }
 
 .Mini {
@@ -68,11 +82,12 @@
 }
 
 .DivLigne {
-    width: 100%;
-    height: 30px;
+    width: 80%;
+    height: 15px;
     border-bottom: 1px solid white;
     text-align: center;
     margin-top: 10px;
+    margin-left: 10%;
 }
 
 .OrSpan {
@@ -81,3 +96,38 @@
     padding: 0 10px;
 }
 
+/*******************************/
+
+/***********Sign In*************/
+
+.DivSousSousContainerSignIn {
+    width: 80%;
+    justify-content: center;
+    margin: 10%;
+}
+
+.Input {
+    height: 50px;
+    font-size: 15pt;
+    width: 100%;
+    padding: 1%;
+    outline: none;
+    background-color: black;
+    border: 3px solid gray;
+    color:white;
+}
+
+.Input:focus {
+    border: 3px solid #0272fc;
+}
+
+.ButtonSignIn {
+    border-radius: 25px;
+    font-size: 20px;
+    padding: 15px 35px;
+    background-color: #0272fc;
+    color: white;
+    width: 100%;
+    margin-top: 30%;
+}
+/*******************************/
