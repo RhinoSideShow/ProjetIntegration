@@ -2,7 +2,9 @@
     width: 100%;
     display: flex;
     justify-content: center;
-    background-color: #282c34;
+    background-color: #000000;
+    color: white; 
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .DivSousContainer {
@@ -40,6 +42,17 @@
     height: 1040px;
 }
 
+.Label{
+
+    font-size: 20px;
+    padding: 30px;
+    
+    width: 50%;
+    display: inline-block;
+    overflow: auto;
+    
+}
+
 .Button {
     border-radius: 15px;
     font-size: 20px;
@@ -47,6 +60,24 @@
     background-color: #0272fc;
     color: white;
     width: 100%;
+}
+
+.Input {
+
+  
+  border-top-style: groove;
+  border-right-style: groove;
+  border-left-style: groove;
+  border-bottom-style: groove;
+  background-color: transparent;
+ 
+  font-size: 20px;
+  width: 100%;
+  
+  color: #FFF;
+  padding: 10px;
+  margin-bottom: 8px; 
+  outline: 1px;
 }
 .ButtonSignIn {
     border-radius: 15px;
@@ -87,18 +118,55 @@
     width: 400px;
     /* Form outline */
     padding: 1em;
-    border: 1px solid #CCC;
-    border-radius: 1em;
+    
   }
 
-  .form {
-    font-size: 14px;
-    text-align: right;
-}
+  /* Switch*/
 
-.label {
-    /* Uniform size & alignment */
+  .Switch{
+
+    
     display: inline-block;
-    width: 90px;
-    text-align: left;
+    overflow: auto;
+  }
+
+  .react-switch-checkbox {
+    height: 0;
+    width: 0;
+    visibility: hidden;
+  }
+  
+  .react-switch-label {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+    width: 100px;
+    height: 50px;
+    background: grey;
+    border-radius: 100px;
+    position: relative;
+    transition: background-color .2s;
+  }
+  
+  .react-switch-label .react-switch-button {
+    content: '';
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    width: 45px;
+    height: 45px;
+    border-radius: 45px;
+    transition: 0.2s;
+    background: #fff;
+    box-shadow: 0 0 2px 0 rgba(10, 10, 10, 0.29);
+  }
+  
+  .react-switch-checkbox:checked + .react-switch-label .react-switch-button {
+    left: calc(100% - 2px);
+    transform: translateX(-100%);
+  }
+  
+  .react-switch-label:active .react-switch-button {
+    width: 60px;
   }
