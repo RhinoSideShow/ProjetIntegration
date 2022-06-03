@@ -22,34 +22,34 @@ export default function login() {
                                 <form className={styles.Form} action="/my-handling-form-page" method="post">
 
                                 <li>
-                                    <label className={styles.form} for="nom">Nom :</label>
-                                    <input className={styles.button} type="text" id="nom" name="user_nom"></input>
+                                    <label className={styles.label} for="nom">Nom </label>
+                                    <input className={styles.form} type="text" id="nom" name="user_nom"></input>
                                     <br/><br/>
                                 </li>
                                 <li>
                                     <label className={styles.label} for="prenom">Prénom </label>
-                                    <input className={styles.button} type="text" id="prenom" name="user_prenom"></input>
+                                    <input className={styles.form} type="text" id="prenom" name="user_prenom"></input>
                                     <br/><br/>
                                 </li>
                                 <li>
                                     <label className={styles.label} for="email">Email </label>
-                                    <input className={styles.button} type="text" id="email" name="user_email"></input>
+                                    <input className={styles.form} type="text" id="email" name="user_email"></input>
                                     <br/><br/>
                                 </li>
                                 <li>
-                                    <label for="telephone">Téléphone </label>
-                                    <input type="text" id="telephone" name="user_telephone"></input>
+                                    <label className={styles.label} for="telephone">Téléphone </label>
+                                    <input className={styles.form} type="text" id="telephone" name="user_telephone"></input>
                                     <br/><br/>
                                 </li>
                                 <li>
-                                    <label for="adresse">Adresse </label>
-                                    <input type="text" id="adresse" name="user_adresse"></input>
-                                    <br/><br/>
+                                    <label className={styles.label} for="adresse">Adresse </label>
+                                    <input className={styles.form} type="text" id="adresse" name="user_adresse"></input>
+                                <br/><br/>
                                 </li>
                              
                                 <li>
-                                    <label for="statut">Statut </label>
-                                    <input type="text" id="statut" name="user_statut"></input>
+                                    <label className={styles.label} for="statut">Statut </label>
+                                    <input className={styles.form} type="text" id="statut" name="user_statut"></input>
                                 </li>
                                 </form>
                                 <li class="button">
