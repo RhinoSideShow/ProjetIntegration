@@ -25,7 +25,7 @@ export default function SinIn() {
                 <div className={styles.DivSousSousContainerSignIn}>
                     <div>
                         <img src="/Image_Login/logoMoon.png" className={styles.DivImageLogo}/><br/>
-                        <h1>Connectez-vous à ProjetGo</h1>
+                        <h2>Connectez-vous à ProjetGo</h2>
                     </div>
                     <br/>
                     <div>
@@ -39,7 +39,7 @@ export default function SinIn() {
                     </div>
                     <div>
                         <button className={styles.ButtonSignIn} onClick={() => router.push('/')}>Suivant</button>
-                        <p>&emsp;&emsp;Vous n'avez pas de compte ?<a onClick={handleOnClickPasDeCompte}>Inscrivez-vous</a></p>
+                        <p>&emsp;&emsp;Vous n'avez pas de compte ?<a onClick={handleOnClickPasDeCompte}>&ensp;Inscrivez-vous</a></p>
                     </div>
                 </div>
             </div>

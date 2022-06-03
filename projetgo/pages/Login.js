@@ -23,9 +23,8 @@ export default function Login() {
                                 <img src="/Image_Login/logoMoon.png" className={styles.DivImageLogo}/><br/>
                             </div>
                             <div>
-                                <h1>Apporter votre projet vers la lune</h1>
-                                <h2>Rejoignez ProjetGo aujourd'hui.</h2>
-                                <br/><br/>
+                                <h3>Apporter votre projet vers la lune</h3>
+                                <h4>Rejoignez ProjetGo aujourd'hui.</h4><br/><br/>
 
                                 <button className={styles.ButtonLogin} onClick={() => router.push('/')}>Continuer sans Compte</button>
 
@@ -39,7 +38,7 @@ export default function Login() {
                                 <p className={styles.TextAccount}>Vous n'avez pas de compte ?</p>
 
                                 <button className={styles.ButtonLoginSignIn} onClick={() => router.push('/')}>S'inscrire</button>
-                                <p className={styles.Mini}>En vous inscrivant, vous acceptez les conditions d'utilisation et la confidentialité Politique, y compris l'utilisation des cookies.</p>
+                                <p className={styles.Mini}>En vous inscrivant, vous acceptez les conditions d'utilisation et </p><p className={styles.Mini}>la confidentialité Politique, y compris l'utilisation des cookies.</p>
                             </div>
                         </div>
                     </div>
