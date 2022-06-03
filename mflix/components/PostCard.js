@@ -53,8 +53,8 @@ export default function PostCard({ post }) {
     return (
         <>
             <li>
-                <h3>{post.title}</h3>
-                <p>{post.content}</p>
+                <h3>{post.nom}</h3>
+                <p>{post.prenom}</p>
                 <small>{new Date(post.createdAt).toLocaleDateString()}</small>
                 <br />
                 {!post.published ? (
