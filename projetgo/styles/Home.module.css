@@ -7,17 +7,11 @@
 }
 
 .DivSousContainer {
-    width: 35%;
-    min-width: 700px;
-    max-width: 700px;
-    min-height: 700px;
-    max-height: 700px;
-
-    display: flex;
-    justify-content: center;
-    background-color: black;
-    border-radius: 40px;
+    border : 1px solid white;
+    padding :4%;
+    margin : 2%;
 }
+
 
 .DivImageLogo {
     height: 120px;
@@ -127,6 +121,64 @@
     background-color: #0272fc;
     color: white;
     width: 100%;
-    margin-top: 15%;
+
 }
 /*******************************/
+
+
+.DivParent{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background-color: #282c34;
+
+
+}
+
+.DivChild1{
+position: absolute;
+right : 100px;
+}
+
+.DivChild2{
+position : relative;
+    right : 150px;
+    top : 250px;
+
+}
+
+.DivChild3{
+position : relative;
+left : 40px;
+
+
+}
+
+.DivBoutonSignIn{
+    position: relative;
+    left : 100px;
+    bottom : 60px;
+
+
+}
+
+.ArrayContainer {
+    border : 1px solid white;
+    padding :4%;
+    margin : 2%;
+}
+
+.Logo {
+    position: relative;
+    height: 120px;
+    width: 120px;
+    justify-content: center;
+   right: 590px;
+}
+
+.TitleProject{
+    position: relative;
+    top: 200px;
+    left : 100px;
+}
+
