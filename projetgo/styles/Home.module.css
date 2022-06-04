@@ -113,20 +113,138 @@
     outline: none;
     background-color: black;
     border: 3px solid gray;
-    color:white;
+    color: white;
 }
-
-.Input:focus {
-    border: 3px solid #0272fc;
-}
-
 .ButtonSignIn {
     border-radius: 25px;
     font-size: 20px;
-    padding: 15px 35px;
+    padding: 15px 15px;
     background-color: #0272fc;
     color: white;
     width: 100%;
-    margin-top: 15%;
+    margin-top: 10%;
 }
 /*******************************/
+/***********Credit_Don*************/
+
+.InputCredit {
+    height: 35px;
+    font-size: 15pt;
+    width: 100%;
+    padding: 3%;
+    outline: none;
+    background-color: black;
+    border: 3px solid gray;
+    color:white;
+    border-radius: 20px;
+}
+
+.InputCreditNum {
+    height: 35px;
+    font-size: 15pt;
+    width: 70%;
+    padding: 3%;
+    outline: none;
+    background-color: black;
+    border: 3px solid gray;
+    color:white;
+    border-radius: 40px;
+}
+.InputCreditCodeSecurite {
+    height: 35px;
+    font-size: 15pt;
+    width: 20%;
+    padding: 3%;
+    outline: none;
+    background-color: black;
+    border: 3px solid gray;
+    color:white;
+    border-radius: 40px;
+    float:right;
+}
+.InputCreditDate {
+    height: 35px;
+    font-size: 15pt;
+    width: 20%;
+    padding: 3%;
+    outline: none;
+    background-color: black;
+    border: 3px solid gray;
+    color:white;
+    border-radius: 40px;
+}
+
+.InputCreditDon {
+    height: 50px;
+    font-size: 15pt;
+    width: 50%;
+    padding: 5%;
+    outline: none;
+    background-color: black;
+    border: 3px solid gray;
+    color:white;
+    border-radius: 40px;
+}
+
+.InputCreditTaxes {
+    height: 35px;
+    font-size: 15pt;
+    width: 30%;
+    padding: 3%;
+    outline: none;
+    background-color: black;
+    border: 3px solid gray;
+    color:white;
+    border-radius: 40px;
+}
+
+.SpanCredit {
+    padding-left: 42%;
+}
+
+.SpanCreditDon {
+    font-size: 30px;
+    padding-left: 15%;
+}
+
+.SpanCreditTaxes {
+    padding-left: 20%;
+}
+
+.DivInputCreditDon {
+    float:right;
+    margin-top: 10%;
+}
+/*******************************/
+/***********Credit_Don_Animation*************/
+
+.Loading {
+    display: flex;
+    justify-content: center;
+}
+
+.DivLoading {
+    margin-top: 40%;
+    align-items: center;
+}
+
+.Loading::after {
+    content: "";
+    width: 80px;
+    height: 80px;
+    border: 10px solid #dddddd;
+    border-top-color: #0272fc;
+    border-radius: 50%;
+    animation: Loading 0.5s linear infinite;
+}
+
+@keyframes Loading {
+    to {
+        transform: rotate(1turn);
+    }
+}
+
+.DivMerci {
+    margin-left: 5%;
+    margin-top: 15%;
+}
