@@ -18,8 +18,38 @@
 
 - Participer au scrum afin de mettre en oeuvre le sprint 0 (La phase de planification).<br>
 - Finir du UML afin de nous donner une idee de la charge de travail a repartir.<br>
-- Aprrentissage de nouvelle technologie sur internet (Intégration de Mongobd sur Next.js).<br> 
+- Aprrentissage de nouvelle technologie sur internet (Intégration de Mongobd dans Next.js).<br>
 
 ---
 
 ### 2022-06-02
+
+- Finis mon apprentissage de l'intégration de Mongodb dans Next.js.
+- Finis le frontend des pages Login.js et Sign_In.js.
+- Finis le routage pour les pages Login.js et Sign_In.js.
+- Début du backend pour les pages Login.js et Sign_In.js.
+
+#### Login.js
+<img src="Image\image_journal_Nicolas\Login2.JPG" width="800" height="500" alt="Login">
+
+#### Sign_In.js
+
+<img src="Image\image_journal_Nicolas\SignIn.JPG" width="800" height="500" alt="Login">
+
+---
+
+### 2022-06-03
+
+- Finis le frontend de la page Credit_Don.js.
+- Finis le routage de la page Credit_Don.js.
+- Finis animation de confirmation du don payer.
+
+#### Credit_Don.js
+<img src="Image\image_journal_Nicolas\Don.JPG" width="800" height="500" alt="Login">
+
+#### Animation Credit_Don.js
+<img src="https://media.giphy.com/media/HeWWoi62mz9Baq35kZ/giphy.gif" width="800" height="500" alt="Login">
+
+---
+
+### 2022-06-04
