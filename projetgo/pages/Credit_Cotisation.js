@@ -2,11 +2,18 @@ import Head from 'next/head'
 import styles from '../styles/Home.module.css';
 import {useState} from "react";
 import Animation_Credit_Don from "./Animation_Credit_Don";
+import {useRouter} from "next/router";
 
 export default function Credit_Cotisation() {
 
     const [argent, setArgent] = useState(120.0);
     const [show, setShow] = useState(false);
+    const router = useRouter();
+
+    //
+    const handleOnClickPlustard = () =>{
+        router.push('/').then(r => r)
+    }
 
     const handleShow = () => {
         setShow(!show);
@@ -23,6 +30,9 @@ export default function Credit_Cotisation() {
                         <div>
                             <div>
                                 <img src="/Image_Login/logoMoon.png" className={styles.DivImageLogo}/>
+                                <div className={styles.DivInputCreditDon}>
+                                    <span className={styles.SpanCreditCotisation}>Cotisation Annuelle</span>&emsp;
+                                </div>
                             </div>
                         </div>
                         <br/>
@@ -58,7 +68,8 @@ export default function Credit_Cotisation() {
                         {show && <Animation_Credit_Don isDon={false} setIsDon={false}/>}
                         <div>
                             {!show &&
-                                <button className={styles.ButtonSignIn} onClick={handleShow}>Payer {argent * 1.15.toFixed(2) + " $"}</button>}
+                                <button className={styles.ButtonDon} onClick={handleShow}>Payer {argent * 1.15.toFixed(2) + " $"}</button>}
+                            {!show && <p><a className={styles.DivPlusTard} onClick={handleOnClickPlustard}>Payer plus tard</a></p>}
                         </div>
                     </div>
                 </div>

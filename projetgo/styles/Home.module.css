@@ -127,6 +127,16 @@
 /*******************************/
 /***********Credit_Don*************/
 
+.ButtonDon {
+    border-radius: 25px;
+    font-size: 20px;
+    padding: 15px 15px;
+    background-color: #0272fc;
+    color: white;
+    width: 100%;
+    margin-top: 5%;
+}
+
 .InputCredit {
     height: 35px;
     font-size: 15pt;
@@ -207,6 +217,10 @@
     padding-left: 15%;
 }
 
+.SpanCreditCotisation {
+    font-size: 30px;
+}
+
 .SpanCreditTaxes {
     padding-left: 20%;
 }
@@ -219,7 +233,11 @@
     float:right;
     margin-top: 10%;
 }
-/*******************************/
+
+.DivPlusTard {
+    margin-left: 40%;
+}
+/*********************************************/
 /***********Credit_Don_Animation*************/
 
 .Loading {
@@ -252,3 +270,9 @@
     margin-left: 5%;
     margin-top: 15%;
 }
+
+.DivConfetti {
+    margin-left: 33%;
+    margin-top: 7%;
+}
+/*********************************************/

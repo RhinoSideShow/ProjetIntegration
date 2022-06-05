@@ -2,6 +2,7 @@ import Head from 'next/head'
 import styles from '../styles/Home.module.css';
 import {useEffect, useState} from "react";
 import {useRouter} from "next/router";
+import Confetti from 'react-confetti'
 
 export default function Animation_Credit_Don({isDon, setIsDon}) {
 
@@ -60,6 +61,7 @@ export default function Animation_Credit_Don({isDon, setIsDon}) {
                 </div>
                 <div style={show === false ? {display: 'none'} : {display: 'inline'}}>
                     <div className={styles.DivMerci}>
+                        <Confetti className={styles.DivConfetti} width={650} height={650}/>
                         <h1>Cotisation payer.</h1>
                         <br/><br/>
                         <div>

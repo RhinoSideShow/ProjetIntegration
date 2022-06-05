@@ -62,7 +62,7 @@ export default function Credit_Don() {
                         {show && <Animation_Credit_Don isDon={true} setIsDon={true}/>}
                         <div>
                             {!show &&
-                                <button className={styles.ButtonSignIn} onClick={handleShow}>Faire un don</button>}
+                                <button className={styles.ButtonDon} onClick={handleShow}>Faire un don</button>}
                         </div>
                     </div>
                 </div>
