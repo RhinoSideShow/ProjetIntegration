@@ -62,7 +62,7 @@ export default function Animation_Credit_Don({isDon, setIsDon}) {
                 <div style={show === false ? {display: 'none'} : {display: 'inline'}}>
                     <div className={styles.DivMerci}>
                         <Confetti className={styles.DivConfetti} width={650} height={650}/>
-                        <h1>Cotisation payer.</h1>
+                        <h1>Cotisation payée.</h1>
                         <br/><br/>
                         <div>
                             <h3>Redirection dans {counter}</h3>
