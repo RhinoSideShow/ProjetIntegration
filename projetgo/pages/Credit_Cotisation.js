@@ -3,9 +3,9 @@ import styles from '../styles/Home.module.css';
 import {useState} from "react";
 import Animation_Credit_Don from "./Animation_Credit_Don";
 
-export default function Credit_Don() {
+export default function Credit_Cotisation() {
 
-    const [money, setMoney] = useState(0.0);
+    const [argent, setArgent] = useState(120.0);
     const [show, setShow] = useState(false);
 
     const handleShow = () => {
@@ -23,11 +23,6 @@ export default function Credit_Don() {
                         <div>
                             <div>
                                 <img src="/Image_Login/logoMoon.png" className={styles.DivImageLogo}/>
-                                <div className={styles.DivInputCreditDon}>
-                                    <span className={styles.SpanCreditDon}>Montant</span>&emsp;
-                                    <input className={styles.InputCreditDon}
-                                           onChange={e => setMoney(parseFloat(e.target.value))}/><br/><br/>
-                                </div>
                             </div>
                         </div>
                         <br/>
@@ -48,21 +43,22 @@ export default function Credit_Don() {
                             <input className={styles.InputCreditDate} placeholder="YY"/><br/><br/>
                         </div>
                         <div>
-                            <span>&ensp;Montant</span><span className={styles.SpanCreditTaxes}>&emsp;&ensp;ProjetGo Tips</span><span className={styles.SpanCreditTaxes}>Montant Total</span><br/>
+                            <span>&ensp;Cotisation annuelle</span><span className={styles.SpanCreditTaxesCotisation}>Taxes&emsp;&ensp;</span>&emsp;&emsp;
+                            <span className={styles.SpanCreditTaxesCotisation}>&emsp;&emsp;Montant Total</span><br/>
 
-                            <input className={styles.InputCreditTaxes} defaultValue={isNaN(money) ? setMoney(0) : money}
+                            <input className={styles.InputCreditTaxes} defaultValue={argent}
                                    disabled="disabled"/>&ensp;+&ensp;
-                            <input className={styles.InputCreditTaxes} defaultValue={money === 0 ? 0 : 5.0}
+                            <input className={styles.InputCreditTaxes} defaultValue={argent * 0.15}
                                    disabled="disabled"/>&ensp;=&ensp;
                             <input className={styles.InputCreditTaxes}
-                                   defaultValue={money === 0 ? 0 : (money + 5.0).toFixed(2) + " CAD"} disabled="disabled"/>&ensp;
+                                   defaultValue={argent * 1.15.toFixed(2) + " $"} disabled="disabled"/>&ensp;
                         </div>
                     </div>
                     <div>
-                        {show && <Animation_Credit_Don isDon={true} setIsDon={true}/>}
+                        {show && <Animation_Credit_Don isDon={false} setIsDon={false}/>}
                         <div>
                             {!show &&
-                                <button className={styles.ButtonSignIn} onClick={handleShow}>Faire un don</button>}
+                                <button className={styles.ButtonSignIn} onClick={handleShow}>Payer {argent * 1.15.toFixed(2) + " $"}</button>}
                         </div>
                     </div>
                 </div>
