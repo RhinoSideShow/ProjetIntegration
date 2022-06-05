@@ -19,9 +19,12 @@ export default function Home({ posts }) {
                         <h2>No added posts</h2>
                     ) : (
                         <ul>
-                            {posts.map((post, i) => (
+                           
+                            {posts.slice(-1).map((post,i)=> (
                                 <PostCard post={post} key={i} />
+                                
                             ))}
+                         
                         </ul>
                     )}
                 </div>
