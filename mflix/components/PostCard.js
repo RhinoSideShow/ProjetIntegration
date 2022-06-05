@@ -53,8 +53,8 @@ export default function PostCard({ post }) {
     return (
         <>
             <li>
-                <h3>Nom: {post.nom}</h3>
-                <p><h3>Prénom: </h3> {post.prenom}</p>
+                <h4>Nom: {post.nom}</h4>
+                <h4>Prénom:  {post.prenom}</h4>
                 <p>Email: {post.email}</p>
                 <p>Telephone: {post.telephone}</p>
                 <p>Adresse: {post.adresse}</p>

@@ -13,6 +13,7 @@ export default function Membres() {
     const [adresse, setAdresse] = useState('');
     const [error, setError] = useState('');
     const [message, setMessage] = useState('');
+    <input type="radio"/>
 
     const handlePost = async (e) => {
         e.preventDefault();
@@ -147,18 +148,22 @@ export default function Membres() {
                                    value={adresse}
                                    placeholder="Adresse">
 
+        
                                     </input>
+                                    <label>
+                                <input type="radio" /> Administrateur
+                                </label>
                                     <br/><br/>
                                                                     
-                                    <label className={styles.list}>
+                                   
+                                <button className={styles.Button} type="submit">Soumettre</button>
+                                <p className={styles.Mini}>En vous inscrivant, vous acceptez les conditions de service et la politique
+                                    de confidentialité, y compris l'utilisation des cookies.</p>
+                                    <label className={styles.Link}>
                                      <Link href="/">
                                      <a>Liste de membres</a>
                                     </Link>
                                     </label>
-                                <button className={styles.Button} type="submit">Soumettre</button>
-                                <p className={styles.Mini}>En vous inscrivant, vous acceptez les conditions de service et la politique
-                                    de confidentialité, y compris l'utilisation des cookies.</p>
-                            
                                 </form>
                            
                             </div>
