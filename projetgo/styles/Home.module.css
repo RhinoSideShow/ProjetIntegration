@@ -267,12 +267,11 @@
 }
 
 .DivMerci {
-    margin-left: 5%;
-    margin-top: 15%;
+    position: relative;
 }
 
 .DivConfetti {
-    margin-left: 33%;
-    margin-top: 7%;
+    margin-left: -8%;
+    margin-top: -15%;
 }
 /*********************************************/
