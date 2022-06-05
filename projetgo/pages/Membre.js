@@ -48,7 +48,14 @@ export default function login() {
                                 <button className={styles.Button} type="submit">Soumettre</button>
                                 <p className={styles.Mini}>En vous inscrivant, vous acceptez les conditions de service et la politique
                                     de confidentialité, y compris l'utilisation des cookies.</p>
-
+                                    <ul>
+                           
+                           {posts.slice(-1).map((post,i)=> (
+                               <PostCard post={post} key={i} />
+                               
+                           ))}
+                        
+                       </ul>
                                 </form>
                            
                             </div>

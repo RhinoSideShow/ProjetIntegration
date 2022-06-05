@@ -8,12 +8,12 @@ export default function Nav() {
             <ul className={styles.list}>
                 <li className={styles.item}>
                     <Link href="/">
-                        <a>Home</a>
+                        <a>Accueil</a>
                     </Link>
                 </li>
                 <li>
                     <Link href="/add-post">
-                        <a>Add post</a>
+                        <a>nouvelle entrée</a>
                     </Link>
                 </li>
             </ul>

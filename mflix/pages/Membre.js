@@ -1,4 +1,5 @@
 import styles from '../styles/Home.module.css';
+import Link from 'next/link';
 
 import { useState } from 'react';
 
@@ -148,15 +149,16 @@ export default function Membres() {
 
                                     </input>
                                     <br/><br/>
-                                
-
-                                    <label className={styles.Label}>Benevolat </label>
-                                    
-
+                                                                    
+                                    <label className={styles.list}>
+                                     <Link href="/">
+                                     <a>Liste de membres</a>
+                                    </Link>
+                                    </label>
                                 <button className={styles.Button} type="submit">Soumettre</button>
                                 <p className={styles.Mini}>En vous inscrivant, vous acceptez les conditions de service et la politique
                                     de confidentialité, y compris l'utilisation des cookies.</p>
-
+                            
                                 </form>
                            
                             </div>

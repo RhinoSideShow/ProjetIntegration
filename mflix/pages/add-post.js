@@ -17,13 +17,13 @@ export default function AddPost() {
         setMessage('');
 
         // fields check
-        if (!title || !content) return setError('All fields are required');
+        if (!title || !content) return setError('remplir tout le formulaire');
 
         // post structure
         let post = {
             title,
             content,
-            published: false,
+            
             createdAt: new Date().toISOString(),
         };
         // save the post
