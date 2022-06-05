@@ -31,7 +31,7 @@ export default function login() {
                                     <br/><br/>
                                 
                                     <label for="telephone"> </label>
-                                    <input className={styles.Input} type="text" id="telephone" name="user_telephone" placeholder="Téléphone 000 000 0000"></input>
+                                    <input className={styles.Input} type="text" id="telephone" name="user_telephone" placeholder="Téléphone 000 0000000"></input>
                                     <br/><br/>
                                 
                                     <label for="adresse"> </label>
