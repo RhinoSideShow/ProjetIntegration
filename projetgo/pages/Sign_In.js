@@ -30,15 +30,15 @@ export default function SinIn() {
                     <br/>
                     <div>
 
-                        <input type="text" className={styles.Input} placeholder="Adresse Email"/>
+                        <input type="text" id="email" className={styles.Input} placeholder="Adresse Email"/>
                         <br/><br/>
 
-                        <input type="password" className={styles.Input} placeholder="Mot de Passe"/>
+                        <input type="password" id="pass" className={styles.Input} placeholder="Mot de Passe"/>
                         &emsp;<a onClick={handleOnClickMPOublier}>Mot de passe oublié ?</a>
                         <br/><br/><br/><br/>
                     </div>
                     <div>
-                        <button className={styles.ButtonSignIn} onClick={() => router.push('/')}>Suivant</button>
+                        <button className={styles.ButtonSignIn} onClick={() => router.push('/'+document.getElementById("email").value +"_"+document.getElementById("pass").value)}>Suivant</button>
                         <p>&emsp;&emsp;Vous n'avez pas de compte ?<a onClick={handleOnClickPasDeCompte}>&ensp;Inscrivez-vous</a></p>
                     </div>
                 </div>
