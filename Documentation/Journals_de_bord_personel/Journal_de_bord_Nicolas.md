@@ -18,7 +18,7 @@
 
 - Participer au scrum afin de mettre en oeuvre le sprint 0 (La phase de planification).<br>
 - Finir du UML afin de nous donner une idee de la charge de travail a repartir.<br>
-- Aprrentissage de nouvelle technologie sur internet (Intégration de Mongobd dans Next.js).<br>
+- Aprrentissage de nouvelle technologie sur internet (Intégration de Mongobd dans Next.js).<br> 
 
 ---
 
@@ -52,4 +52,9 @@
 
 ---
 
-### 2022-06-04
+### 2022-06-05
+
+- Finis le frontend de la page Credit_Cotisation.js.
+- Finis le routage de la page Credit_Cotisation.js.
+- Motifier l'animation de Animation_Credit_Don pour qu'il retourne différent "div" si le bouton clicker vien de Credit_Don.js. ou Credit_Cotisation.js.
+- 
