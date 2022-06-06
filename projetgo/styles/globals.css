@@ -33,3 +33,7 @@ button:hover {
 * {
     box-sizing: border-box;
 }
+
+input:focus {
+    border: 3px solid #0272fc;
+}

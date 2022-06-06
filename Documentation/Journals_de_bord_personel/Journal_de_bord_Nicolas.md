@@ -39,3 +39,22 @@
 ---
 
 ### 2022-06-03
+
+- Finis le frontend de la page Credit_Don.js.
+- Finis le routage de la page Credit_Don.js.
+- Finis animation de confirmation du don payer.
+
+#### Credit_Don.js
+<img src="Image\image_journal_Nicolas\Don.JPG" width="800" height="500" alt="Login">
+
+#### Animation Credit_Don.js
+<img src="https://media.giphy.com/media/HeWWoi62mz9Baq35kZ/giphy.gif" width="800" height="500" alt="Login">
+
+---
+
+### 2022-06-05
+
+- Finis le frontend de la page Credit_Cotisation.js.
+- Finis le routage de la page Credit_Cotisation.js.
+- Motifier l'animation de Animation_Credit_Don pour qu'il retourne différent "div" si le bouton clicker vien de Credit_Don.js. ou Credit_Cotisation.js.
+- 
