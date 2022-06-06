@@ -26,7 +26,7 @@ const Navbar = () => {
             <div>
                 <Link href='/'passHref>
                     <Image>
-                        <img src="/Image/logoMoon.png" alt="nope"/>
+                        <img src="/Image_Navbar/logoMoon.png" alt="nope"/>
                     </Image>
                 </Link>
             </div>

@@ -20,10 +20,10 @@
       "static/chunks/main.js",
       "static/chunks/pages/index.js"
     ],
-    "/Login": [
+    "/Contact": [
       "static/chunks/webpack.js",
       "static/chunks/main.js",
-      "static/chunks/pages/Login.js"
+      "static/chunks/pages/Contact.js"
     ],
     "/_app": [
       "static/chunks/webpack.js",
