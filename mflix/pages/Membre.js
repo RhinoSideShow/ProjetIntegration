@@ -1,6 +1,7 @@
 import styles from '../styles/Home.module.css';
 
 import { useState } from 'react';
+import {useRouter} from 'next/router'
 
 
 export default function Membres() {
@@ -12,9 +13,12 @@ export default function Membres() {
     const [adresse, setAdresse] = useState('');
     const [error, setError] = useState('');
     const [message, setMessage] = useState('');
+    const router = useRouter();
 
     const handlePost = async (e) => {
         e.preventDefault();
+        router.push(`./MembreAccount`)
+        //router.push(`/channel/${inputValue}`)
 
         // reset error and message
         setError('');
