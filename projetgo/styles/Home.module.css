@@ -110,6 +110,20 @@
     color:white;
 }
 
+.Input2 {
+    height: 35px;
+    font-size: 12pt;
+    width: 100%;
+    padding: 1%;
+    outline: none;
+    background-color: black;
+    border: 3px solid gray;
+    color:white;
+    height : 100px;
+    resize : none;
+
+}
+
 .Input:focus {
     border: 3px solid #0272fc;
 }
@@ -121,6 +135,16 @@
     background-color: #0272fc;
     color: white;
     width: 100%;
+
+}
+
+.ButtonSignIn2 {
+    border-radius: 25px;
+    font-size: 20px;
+    padding: 15px 35px;
+    background-color: #0272fc;
+    color: white;
+    width: 50%;
 
 }
 /*******************************/
