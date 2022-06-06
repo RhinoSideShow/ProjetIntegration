@@ -1,0 +1,186 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
+
+* {
+  font-family: 'Open Sans', sans-serif;
+  box-sizing: border-box;
+  background-color: black;
+  color: rgb(248, 248, 248);
+}
+
+/* Nav Area */
+.top-bar {
+  width: 100%;
+  margin-top: 0;
+  position: relative;
+  height: 80px;
+  text-align: right;
+}
+#title {
+  position: absolute;
+  left: 20px;
+  top: 0;
+  display: inline-block;
+  height: 100%;
+}
+.nav {
+  height: 100%;
+  display: inline-block;
+}
+.nav a {
+  margin: 0 20px;
+  font-size: 120%;
+  height: 100%;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+/* Styles for Cards */
+.card {
+  display: inline-block;
+  width: 300px;
+  height: 400px;
+  overflow: hidden;
+  border: 1.25px solid rgb(255, 255, 255);
+  border-radius: 16px;
+  margin: 10px;
+  transition: 0.5s all;
+  --shadow: transparent;
+  box-shadow: 0 0 10px 5px var(--shadow);
+  position: relative;
+  font-size: 100%;
+}
+
+.card:hover {
+  --shadow: rgb(0, 0, 0);
+  /* transform: rotateY(180deg) translate(20px, 20px);
+  background: pink; */
+}
+
+.card:hover .main-content {
+  pointer-events: initial;
+  opacity: 100;
+}
+
+.card * {
+  margin: 0;
+}
+
+
+.main-content {
+  padding: 25px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgb(0, 0, 0);
+  width: 100%;
+  height: 100%;
+  opacity: 100;
+  pointer-events: none;
+  transition: 0.5s all;
+}
+
+.description {
+  color: rgb(141, 141, 141);
+  font-size: 110%;
+}
+
+.membre-name {
+  font-weight: bold;
+  font-size: 130%;
+}
+
+h5.membre-name {
+  color: white;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  padding: 10px;
+  text-shadow: 0px 0px 4px black;
+}
+
+.info ul {
+  padding: 10px;
+  padding-top: 0px;
+  border-radius: 7px;
+}
+
+li {
+  list-style-type: none;
+  margin: 0;
+}
+
+.info {
+  color: rgb(83, 83, 83);
+  position: relative;
+  overflow: hidden;
+}
+
+.info.likes {
+  margin-top: 25px;
+}
+
+.label {
+  font-weight: bold;
+}
+
+.btn-container {
+  text-align: center;
+  padding: 10px;
+  position:absolute;
+  bottom: 10px;
+  right: 10px;
+  display:block;
+}
+
+.btn {
+  --accent: grey;
+  cursor: pointer;
+  background: transparent;
+  border: 1.5px solid var(--accent);
+  color: var(--accent);
+  border-radius: 15px;
+  background-color: #0272fc;
+  color: white;
+  width: 100%;
+  height: 40px;
+    
+}
+
+.btn:hover {
+  background: var(--accent);
+  color: white;
+}
+
+.edit.btn {
+  --accent: green;
+  margin-right: 20px;
+  width:70px;
+}
+
+.delete.btn {
+  --accent: red;
+  
+  width: 70px;
+}
+
+.view.btn {
+  --accent: rgb(255, 115, 0);
+  
+  width: 70px;
+}
+
+/* Delete Membre */
+.membre-container {
+  width: 100%;
+}
+
+.confirmation-box.show {
+  display: block;
+}

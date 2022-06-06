@@ -2,6 +2,7 @@ import styles from '../styles/Home.module.css';
 import Link from 'next/link';
 
 import { useState } from 'react';
+import {useRouter} from 'next/router'
 
 
 export default function Membres() {
@@ -13,10 +14,12 @@ export default function Membres() {
     const [adresse, setAdresse] = useState('');
     const [error, setError] = useState('');
     const [message, setMessage] = useState('');
-    <input type="radio"/>
+    const router = useRouter();
 
     const handlePost = async (e) => {
         e.preventDefault();
+        router.push(`./MembreAccount`)
+        //router.push(`/channel/${inputValue}`)
 
         // reset error and message
         setError('');
