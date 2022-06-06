@@ -6,6 +6,30 @@
     align-items: center;
 }
 
+.DivContainerHome {
+    width: 100%;
+    background-color: #282c34;
+
+}
+
+.DivSousContainerHome {
+    width: 80%;
+    display: inline;
+    justify-content: center;
+    align-items: center;
+    border: 3px solid #dddddd;
+    border-radius: 40px;
+    margin: 20px;
+    padding: 50px;
+}
+
+.DivSousSousContainerHome {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .DivSousContainer {
     width: 35%;
     min-width: 700px;
@@ -23,6 +47,13 @@
     height: 120px;
     width: 120px;
     justify-content: center;
+}
+
+.DivImageNav{
+    height: 80px;
+    width: 80px;
+    justify-content: center;
+    float: left;
 }
 
 /***********Login*************/
@@ -275,3 +306,10 @@
     margin-top: -15%;
 }
 /*********************************************/
+/****************Homepager********************/
+.ArrayContainer {
+    border : 1px solid white;
+    font-size: 20px;
+    padding :2%;
+    margin : 2%;
+}
