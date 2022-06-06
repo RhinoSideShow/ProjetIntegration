@@ -16,6 +16,29 @@ export default function Membres() {
     const [message, setMessage] = useState('');
     const router = useRouter();
 
+    const [favorite, setFavorite] = useState(false);
+    const [adminPerson, setAdminPerson] = useState(false);
+  
+  
+  const handleAdminChange = () => {
+    setFavorite('Administrateur');
+  };
+
+  const handleMembreChange = () => {
+    setFavorite('Membre');
+  };
+  const handleBenevoleChange = () => {
+    setFavorite('Benevole');
+  };
+        const RadioButton = ({ label, value, onChange }) => {
+            return (
+              <label>
+                <input type="radio" checked={value} onChange={onChange} />
+                {label}
+              </label>
+            );
+          };
+      
     const handlePost = async (e) => {
         e.preventDefault();
         router.push(`./MembreAccount`)
@@ -26,7 +49,7 @@ export default function Membres() {
         setMessage('');
 
         // fields check
-        if (!nom || !prenom || !email) return setError('All fields are required');
+        if (!nom || !prenom || !email || !telephone || !adresse) return setError('All fields are required');
 
         // post structure
         let post = {
@@ -151,11 +174,26 @@ export default function Membres() {
                                    value={adresse}
                                    placeholder="Adresse">
 
-        
                                     </input>
-                                    <label>
-                                <input type="radio" /> Administrateur
-                                </label>
+                                    <br/><br/>
+      <RadioButton
+        label="Administrateur"
+        value={favorite ==='Administrateur'}
+        onChange={handleAdminChange}
+      />
+    
+    <RadioButton
+        label="Membre"
+        value={favorite === 'Membre'}
+        onChange={handleMembreChange}
+      />
+      <RadioButton
+        label="Benevole"
+        value={favorite === 'Benevole'}
+        onChange={handleBenevoleChange}
+      />
+    
+                        
                                     <br/><br/>
                                                                     
                                    
