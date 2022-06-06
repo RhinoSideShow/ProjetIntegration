@@ -1,12 +1,13 @@
 import styled from 'styled-components'
 import Link from 'next/link';
+import styles from '../styles/Home.module.css';
 
 const Nav = styled.nav`
   height: 80px;
   background: #000;
   color: #fff;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
 `;
 
@@ -15,18 +16,16 @@ const StyledLink = styled.a`
 `;
 
 const Image = styled.image`
-    width: 0px;
-    height: 0px;
-    margin-left: 20px;
+    margin-right: 90rem;
 `;
 
 const Navbar = () => {
     return (
         <Nav>
-            <div>
+            <div className={styles.DivNav}>
                 <Link href='/'passHref>
                     <Image>
-                        <img src="/Image/logoMoon.png" alt="nope"/>
+                        <img className={styles.DivImageNav} src="/Image_Navbar/logoMoon.png" alt="nope"/>
                     </Image>
                 </Link>
             </div>
