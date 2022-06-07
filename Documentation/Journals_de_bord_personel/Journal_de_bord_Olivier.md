@@ -25,5 +25,6 @@
 - Création de la Navbar.<br> 
 
 ### 2022-06-06
+- Participer au scrum : Mise à jour de tout le monde pour le sprint 1 aujourd'hui.<br>
 - Merge la Navbar avec le projet dans la branche TEST_AVANT_PRODUCTION.<br>  
 - Travailler sur merge les pages ensemble pour le premier sprint.<br>
