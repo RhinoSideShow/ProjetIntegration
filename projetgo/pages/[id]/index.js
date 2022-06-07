@@ -22,7 +22,7 @@ const MembrePage = ({ membre }) => {
   }
 
   let { isBenevole } = membre.benevole;
-  let { isPaid } = membre.payment;
+  
 
   return (
     <div key={membre._id}>
@@ -35,7 +35,7 @@ const MembrePage = ({ membre }) => {
           <p className="description">Adresse: {membre.adresse}</p>
           
           {isBenevole ? <button>Pas Benevole</button> : <button>Benevole</button>}
-          {isPaid ? <button>Pas payé</button> : <button>Payé</button>}
+         
 
           <div className="btn-container">
             <Link href="/[id]/edit" as={`/${membre._id}/edit`}>

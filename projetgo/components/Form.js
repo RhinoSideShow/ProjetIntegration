@@ -18,7 +18,7 @@ const Form = ({ formId, membreForm, forNewMembre = true }) => {
     adresse: membreForm.adresse,
     password: membreForm.password,
     benevole: membreForm.benevole,
-    payment: membreForm.payment,
+ 
     
   })
 
@@ -78,10 +78,8 @@ const Form = ({ formId, membreForm, forNewMembre = true }) => {
 
   const handleChange = (e) => {
     const target = e.target
-    const value =
-    
+    const value = 
       target.name === 'benevole' ? target.checked : target.value
-      target.name === 'paymment' ? target.checked : target.value
     const name = target.name
 
     setForm({
@@ -186,13 +184,6 @@ const Form = ({ formId, membreForm, forNewMembre = true }) => {
           onChange={handleChange}
         />
 
-        <label htmlFor="payment">Payer cotisation annuelle: $1000. Cochez pour payer. </label>
-        <input
-          type="checkbox"
-          name="payment"
-          checked={form.payment}
-          onChange={handleChange}
-        />
 
         <button type="submit" className="btn">
           Soumettre

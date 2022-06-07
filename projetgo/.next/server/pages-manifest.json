@@ -3,7 +3,7 @@
   "/_error": "pages/_error.js",
   "/_document": "pages/_document.js",
   "/Login": "pages/Login.js",
-  "/Homepage": "pages/Homepage.js",
-  "/Sign_In": "pages/Sign_In.js",
-  "/new": "pages/new.js"
+  "/new": "pages/new.js",
+  "/": "pages/index.js",
+  "/[id]": "pages/[id].js"
 }
