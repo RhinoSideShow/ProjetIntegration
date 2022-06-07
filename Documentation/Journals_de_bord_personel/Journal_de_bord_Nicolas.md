@@ -57,4 +57,27 @@
 - Finis le frontend de la page Credit_Cotisation.js.
 - Finis le routage de la page Credit_Cotisation.js.
 - Motifier l'animation de Animation_Credit_Don pour qu'il retourne différent "div" si le bouton clicker vien de Credit_Don.js. ou Credit_Cotisation.js.
-- 
+
+---
+
+### 2022-06-07
+
+- Repris ce que Olivier(navbar) et Alain)(body) on faient pour la page principal et je l'ai améliorer.
+- Finis une partie du backend de la page principal (mapper les projets sur la page principale).
+- Finis le frontend et le backend de la page [projets].js 
+- Implementer un sticky div dans la page [projets].js pour que l'utilisateur voit le bouton donation même quand il scroll vers le bas.
+- Routage du Login.js jusqu'à la page Credit_Don.js
+
+#### page principal
+<img src="Image\image_journal_Nicolas\homepage.JPG" width="800" height="500" alt="homepage">
+
+#### Page d'un projet
+<img src="Image\image_journal_Nicolas\projet.JPG" width="800" height="500" alt="projet">
+
+#### [projets].js avec sticky div
+<img src="https://media.giphy.com/media/6sUzbzq7U7xxuLsyyp/giphy.gif" width="800" height="500" alt="Login">
+
+---
+
+### 2022-06-08
+
