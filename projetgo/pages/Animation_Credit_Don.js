@@ -19,7 +19,7 @@ export default function Animation_Credit_Don({isDon, setIsDon}) {
         const timer =
             counter > 0 && setInterval(() => setCounter(counter - 1), 1000);
         if (counter === 0)
-            router.push('/').then(r => r);
+            router.push('/Homepage').then(r => r);
         return () => clearInterval(timer);
     }, [counter]);
 
@@ -36,6 +36,7 @@ export default function Animation_Credit_Don({isDon, setIsDon}) {
                 </div>
                 <div style={show === false ? {display: 'none'} : {display: 'inline'}}>
                     <div className={styles.DivMerci}>
+                        <Confetti className={styles.DivConfetti} width={650} height={650}/>
                         <h1>Merci pour votre donation.</h1>
                         <div>
                             <img src="/Image_Credit/Merci.jpg"/>

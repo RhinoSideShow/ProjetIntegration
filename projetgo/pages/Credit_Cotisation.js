@@ -12,7 +12,7 @@ export default function Credit_Cotisation() {
 
     //
     const handleOnClickPlustard = () =>{
-        router.push('/').then(r => r)
+        router.push('/Homepage').then(r => r)
     }
 
     const handleShow = () => {
