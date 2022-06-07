@@ -21,6 +21,7 @@ const Form = ({ formId, membreForm, forNewMembre = true }) => {
     
   })
 
+
   /* The PUT method edits an existing entry in the mongodb database. */
   const putData = async (form) => {
     const { id } = router.query
@@ -72,11 +73,13 @@ const Form = ({ formId, membreForm, forNewMembre = true }) => {
     }
   }
 
+
+
   const handleChange = (e) => {
     const target = e.target
     const value =
       target.name === 'benevole' ? target.checked : target.value
-      //target.name === 'paymment' ? target.checked : target.value
+      target.name === 'paymment' ? target.checked : target.value
     const name = target.name
 
     setForm({
@@ -116,7 +119,7 @@ const Form = ({ formId, membreForm, forNewMembre = true }) => {
           type="text"
           maxLength="60"
           name="name"
-          placeholder='Prenom'
+          placeholder='Prénom'
           value={form.name}
           onChange={handleChange}
           required
@@ -149,7 +152,7 @@ const Form = ({ formId, membreForm, forNewMembre = true }) => {
           type="text"
           maxLength="30"
           name="telephone"
-          placeholder='Telephone'
+          placeholder='Téléphone'
           value={form.telephone}
           onChange={handleChange}
           required
@@ -165,7 +168,7 @@ const Form = ({ formId, membreForm, forNewMembre = true }) => {
           onChange={handleChange}
         />
 
-        <label htmlFor="benevole">Voulez vous etre Benevole ? </label>
+        <label htmlFor="benevole">Voulez vous etre Bénévole ? </label>
         <input
           type="checkbox"
           name="benevole"
@@ -173,7 +176,7 @@ const Form = ({ formId, membreForm, forNewMembre = true }) => {
           onChange={handleChange}
         />
 
-        <label htmlFor="payment">Vous devez payer $1000. Cochez pour payer. </label>
+        <label htmlFor="payment">Payer cotisation annuelle: $1000. Cochez pour payer. </label>
         <input
           type="checkbox"
           name="payment"
