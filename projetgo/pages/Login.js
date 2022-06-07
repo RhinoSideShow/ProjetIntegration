@@ -31,7 +31,7 @@ export default function Login() {
                                 <h3>Apporter votre projet vers la lune</h3>
                                 <h4>Rejoignez ProjetGo aujourd'hui.</h4><br/><br/>
 
-                                <button className={styles.ButtonLogin} onClick={() => router.push('/')}>Continuer sans Compte</button>
+                                <button className={styles.ButtonLogin} onClick={() => router.push('/Homepage')}>Continuer sans Compte</button>
 
                                 <div className={styles.DivLigne}>
                                     <span className={styles.OrSpan}>

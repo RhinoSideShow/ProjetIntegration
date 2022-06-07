@@ -23,7 +23,7 @@ const Navbar = () => {
     return (
         <Nav>
             <div className={styles.DivNav}>
-                <Link href='/'passHref>
+                <Link href='/Homepage'passHref >
                     <Image>
                         <img className={styles.DivImageNav} src="/Image_Navbar/logoMoon.png" alt="nope"/>
                     </Image>
@@ -40,7 +40,7 @@ const Navbar = () => {
                 </Link>
             </div>
             <div>
-                <Link href='/Contact'passHref>
+                <Link href='/Sign_In'passHref>
                     <StyledLink>Connexion</StyledLink>
                 </Link>
             </div>

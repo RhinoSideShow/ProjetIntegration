@@ -20,9 +20,16 @@ export default function Homepage({projets}) {
 
     const router = useRouter();
 
+    function LoadOnce()
+    {
+        if (!window.location.hash) {
+            window.location = window.location + '#loaded';
+            window.location.reload();
+        }
+    }
     return (
         <>
-            <div id="__next" className={styles.DivContainerHome}>
+            <div onLoad={LoadOnce} id="__next" className={styles.DivContainerHome}>
                 <Navbar/>
                 <div className={styles.DivContainer}>
                     <div className={styles.DivSousContainerHome}>
@@ -38,7 +45,7 @@ export default function Homepage({projets}) {
                                     {projets.map(projets => (
                                         <div className={styles.ArrayContainer} onClick={() => {router.push('/post/projets/' + projets._id).then(r => r)}}>
                                             <h3 style={{color: "#0272fc;"}}>{projets._titre}</h3>
-                                            {projets._somm}<br/>
+                                            {projets._desc}<br/>
                                             <span style={{
                                                 bottom: 20,
                                                 left: 20,
