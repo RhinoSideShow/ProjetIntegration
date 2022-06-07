@@ -1,86 +1,47 @@
-import Head from 'next/head'
-import clientPromise from '../lib/mongodb'
-import Navbar from "../Components/Navbar";
-import styles from '../styles/Home.module.css';
+import Link from 'next/link'
+import dbConnect from '../lib/dbConnect'
+import Membre from '../models/Membre'
 
-export default function Home({ isConnected }) {
-  return (
-    <div className={styles.container}>
-      <Head>
-        <title>Create Next App</title>
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
-      <Navbar/>
-      <main>
-        <h1 className="title">
-          Welcome to <a href="https://nextjs.org">Next.js with MongoDB!</a>
-        </h1>
-      {isConnected ? (
-          <h2 className="subtitle">You are connected to MongoDB</h2>
-      ) : (
-          <h2 className="subtitle">
-            You are NOT connected to MongoDB. Check the <code>README.md</code>{' '}
-            for instructions.
-          </h2>
-      )}
+const Index = ({ membres }) => (
+  <>
+    {/* Create a card for each membre */}
+    {membres.map((membre) => (
+      <div key={membre._id}>
+        <div className="card">
+          
+          <div className="main-content">
+            <p className="membre-name">{membre.name} {membre.lastname}</p>
+            <p className="description">{membre.email}</p>
+            
 
-      <p className="description">
-        Get started by editing <code>pages/index.js</code>
-      </p>
-
-      <div className="grid">
-        <a href="https://nextjs.org/docs" className="card">
-          <h3>Documentation &rarr;</h3>
-          <p>Find in-depth information about Next.js features and API.</p>
-        </a>
-
-        <a href="https://nextjs.org/learn" className="card">
-          <h3>Learn &rarr;</h3>
-          <p>Learn about Next.js in an interactive course with quizzes!</p>
-        </a>
-
-        <a
-            href="https://github.com/vercel/next.js/tree/canary/examples"
-            className="card"
-        >
-          <h3>Examples &rarr;</h3>
-          <p>Discover and deploy boilerplate example Next.js projects.</p>
-        </a>
-
-        <a
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className="card"
-        >
-          <h3>Deploy &rarr;</h3>
-          <p>
-            Instantly deploy your Next.js site to a public URL with Vercel.
-          </p>
-        </a>
+            <div className="btn-container">
+              <Link href="/[id]/edit" as={`/${membre._id}/edit`}>
+                <button className="btn edit">Edit</button>
+              </Link>
+              <Link href="/[id]" as={`/${membre._id}`}>
+                <button className="btn view">View</button>
+              </Link>
+            </div>
+          </div>
+        </div>
       </div>
-    </main>
-    </div>
-  );
+    ))}
+  </>
+)
+
+/* Retrieves membre(s) data from mongodb database */
+export async function getServerSideProps() {
+  await dbConnect()
+
+  /* find all the data in our database */
+  const result = await Membre.find({})
+  const membres = result.map((doc) => {
+    const membre = doc.toObject()
+    membre._id = membre._id.toString()
+    return membre
+  })
+
+  return { props: { membres: membres } }
 }
 
-export async function getServerSideProps(context) {
-  try {
-    await clientPromise
-    // `await clientPromise` will use the default database passed in the MONGODB_URI
-    // However you can use another database (e.g. myDatabase) by replacing the `await clientPromise` with the following code:
-    //
-    // `const client = await clientPromise`
-    // `const db = client.db("myDatabase")`
-    //
-    // Then you can execute queries against your database like so:
-    // db.find({}) or any of the MongoDB Node Driver commands
-
-    return {
-      props: { isConnected: true },
-    }
-  } catch (e) {
-    console.error(e)
-    return {
-      props: { isConnected: false },
-    }
-  }
-}
+export default Index
