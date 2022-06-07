@@ -27,9 +27,8 @@ export default function AffichageProjets({projet}) {
 
 export async function getServerSideProps({params}) {
 
-    const data = await fetch(`http://localhost:3000/api/ProjetDetails?projets_id=${params.projets_id}`)
+    const data = await fetch(`http://localhost:3000/api/ProjetDetails?projets_id=${params.projets}`)
     const projet = await data.json();
-    console.log(projet)
 
     return {
         props: {projet}

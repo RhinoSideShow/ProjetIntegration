@@ -3,8 +3,6 @@ import styles from "../styles/Home.module.css";
 import Navbar from "../Components/Navbar";
 import clientPromise from "../lib/mongodb";
 
-const router = useRouter();
-
 export async function getServerSideProps(context) {
 
     const client = await clientPromise;
@@ -20,12 +18,7 @@ export async function getServerSideProps(context) {
 
 export default function Homepage({projets}) {
 
-    console.log("here");
-    console.log(projets._id);
-
-    const handleOnClickProjet = () =>{
-        router.push('/post/projets/' + projets._id).then(r => r);
-    }
+    const router = useRouter();
 
     return (
         <>
@@ -43,8 +36,7 @@ export default function Homepage({projets}) {
                                 <br/><br/><br/><br/>
                                 <div className={styles.DivAbsolute}>
                                     {projets.map(projets => (
-                                        <div className={styles.ArrayContainer}
-                                             onClick={handleOnClickProjet}>
+                                        <div className={styles.ArrayContainer} onClick={() => {router.push('/post/projets/' + projets._id).then(r => r)}}>
                                             <h3 style={{color: "#0272fc;"}}>{projets._titre}</h3>
                                             {projets._somm}<br/>
                                             <span style={{
