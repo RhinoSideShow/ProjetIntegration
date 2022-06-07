@@ -1,30 +1,31 @@
-import Head from 'next/head'
 import {useRouter} from "next/router";
 import styles from "../styles/Home.module.css";
 import Navbar from "../Components/Navbar";
+import clientPromise from "../lib/mongodb";
 
+const router = useRouter();
 
-const data = [{id: 1, ProjetName: 'projetGo', sommaire: 'blablabla1', budget: '1001'},
-    {id: 2, ProjetName: 'projectGo2', sommaire: 'blablabla asdf asdf  adsfa2', budget: '1002'},
-    {id: 3, ProjetName: 'projectGo3', sommaire: 'blablablawqwer qwe  qweefasdf  we3', budget: '1003'},
-    {id: 4, ProjetName: 'projectGo4', sommaire: 'blablabla asd gshbsadf aSD  ASDF ASFG4', budget: '1004'},
-    {id: 5, ProjetName: 'projectGo5', sommaire: 'blablabla aQWERWZSDD VASDds fgasdffa5', budget: '1005'},
-    {id: 5, ProjetName: 'projectGo5', sommaire: 'blablabla aQWERWZSDD VASDds fgasdffa5', budget: '1005'},
-    {id: 5, ProjetName: 'projectGo5', sommaire: 'blablabla aQWERWZSDD VASDds fgasdffa5', budget: '1005'},
-    {id: 5, ProjetName: 'projectGo5', sommaire: 'blablabla aQWERWZSDD VASDds fgasdffa5', budget: '1005'},
-    {id: 5, ProjetName: 'projectGo5', sommaire: 'blablabla aQWERWZSDD VASDds fgasdffa5', budget: '1005'},
-    {id: 5, ProjetName: 'projectGo5', sommaire: 'blablabla aQWERWZSDD VASDds fgasdffa5', budget: '1005'},
-    {id: 5, ProjetName: 'projectGo5', sommaire: 'blablabla aQWERWZSDD VASDds fgasdffa5', budget: '1005'},
-    {id: 6, ProjetName: 'projectGo6', sommaire: 'blablabla as dffgsdfg fa sdf asdfa s6', budget: '1006'},]
+export async function getServerSideProps(context) {
 
+    const client = await clientPromise;
+    const db = client.db("projet_go");
 
-const handleOnClick = () => {
-    console.log("click")
+    const data = await db.collection("projets").find({}).toArray();
+    const projets = JSON.parse(JSON.stringify(data));
+
+    return {
+        props: {projets},
+    }
 }
 
-export default function Homepage() {
+export default function Homepage({projets}) {
 
-    const router = useRouter();
+    console.log("here");
+    console.log(projets._id);
+
+    const handleOnClickProjet = () =>{
+        router.push('/post/projets/' + projets._id).then(r => r);
+    }
 
     return (
         <>
@@ -41,11 +42,16 @@ export default function Homepage() {
                                 </div>
                                 <br/><br/><br/><br/>
                                 <div className={styles.DivAbsolute}>
-                                    {data.map(List => (
-                                        <div className={styles.ArrayContainer} onClick={handleOnClick}>
-                                            <h3 style={{color: "#0272fc;"}}>{List.ProjetName}</h3>
-                                            {List.sommaire}<br/>
-                                            <span style={{bottom:20, left:20, position:"absolute"}}>{"Montant soulevé: " + List.budget + " $"}</span>
+                                    {projets.map(projets => (
+                                        <div className={styles.ArrayContainer}
+                                             onClick={handleOnClickProjet}>
+                                            <h3 style={{color: "#0272fc;"}}>{projets._titre}</h3>
+                                            {projets._somm}<br/>
+                                            <span style={{
+                                                bottom: 20,
+                                                left: 20,
+                                                position: "absolute"
+                                            }}>{projets._fonds + " $ de " + projets._budget + " $"}</span>
                                         </div>))}
                                 </div>
                             </div>
