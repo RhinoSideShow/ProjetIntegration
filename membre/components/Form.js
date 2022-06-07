@@ -16,6 +16,7 @@ const Form = ({ formId, membreForm, forNewMembre = true }) => {
     email: membreForm.email,
     telephone: membreForm.telephone,
     adresse: membreForm.adresse,
+    password: membreForm.password,
     benevole: membreForm.benevole,
     payment: membreForm.payment,
     
@@ -78,6 +79,7 @@ const Form = ({ formId, membreForm, forNewMembre = true }) => {
   const handleChange = (e) => {
     const target = e.target
     const value =
+    
       target.name === 'benevole' ? target.checked : target.value
       target.name === 'paymment' ? target.checked : target.value
     const name = target.name
@@ -165,6 +167,14 @@ const Form = ({ formId, membreForm, forNewMembre = true }) => {
           name="adresse"
           placeholder='Adresse'
           value={form.adresse}
+          onChange={handleChange}
+        />
+          <input
+          type="text"
+          maxLength="80"
+          name="password"
+          placeholder='Mot de passe'
+          value={form.password}
           onChange={handleChange}
         />
 
