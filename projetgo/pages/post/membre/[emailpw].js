@@ -1,5 +1,5 @@
 import {useRouter} from "next/router";
-import styles from '../styles/Home.module.css';
+import styles from '../../../styles/Home.module.css';
 
 export default  function VerifSignIn({membre}){
 
@@ -20,17 +20,11 @@ export default  function VerifSignIn({membre}){
 }
 
 export async function  getServerSideProps ({params}) {
-    console.log(params.emailpw)
-
-
     const data = await fetch (`http://localhost:3000/api/membrelogin?emailpw=${params.emailpw}`)
     const membre = await data.json();
-    console.log(membre);
-
 
     return{
         props:{membre}
 
     }
-
 }

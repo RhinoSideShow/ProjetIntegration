@@ -12,11 +12,11 @@ const Nav = styled.nav`
 `;
 
 const StyledLink = styled.a`
-    padding: 0rem 2rem;
+    padding: 0 2rem;
 `;
 
 const Image = styled.image`
-    margin-right: 90rem;
+    margin-right: 80rem;
 `;
 
 const Navbar = () => {
@@ -31,17 +31,17 @@ const Navbar = () => {
             </div>
             <div>
                 <Link href='/'passHref>
-                    <StyledLink>Home</StyledLink>
+                    <StyledLink>Comment ça marche</StyledLink>
                 </Link>
             </div>
             <div>
                 <Link href='/About'passHref>
-                    <StyledLink>About</StyledLink>
+                    <StyledLink>Créer un projet</StyledLink>
                 </Link>
             </div>
             <div>
                 <Link href='/Contact'passHref>
-                    <StyledLink>Contact</StyledLink>
+                    <StyledLink>Connexion</StyledLink>
                 </Link>
             </div>
         </Nav>
