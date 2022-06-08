@@ -2,12 +2,5 @@
   "/_app": "pages/_app.js",
   "/_error": "pages/_error.js",
   "/_document": "pages/_document.js",
-  "/Login": "pages/Login.js",
-<<<<<<< HEAD
-  "/Homepage": "pages/Homepage.js",
-  "/Sign_In": "pages/Sign_In.js",
-  "/new": "pages/new.js"
-=======
-  "/Homepage": "pages/Homepage.js"
->>>>>>> 309c5e91b2535fbbcde4b9cdbdecc6a330894e2b
+  "/[id]": "pages/[id].js"
 }
