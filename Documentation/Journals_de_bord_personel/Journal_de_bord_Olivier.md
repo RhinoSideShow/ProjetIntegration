@@ -29,3 +29,12 @@
 - Merge la Navbar avec le projet dans la branche TEST_AVANT_PRODUCTION.<br>  
 - Travailler sur merge les pages ensemble pour le premier sprint.<br>
 - Début de la création de la présentation PowerPoint.<br>
+
+### 2022-06-07
+- Participer au scrum : Mise à jour de tout le monde et planification de la stratégie pour le sprint 2.<br>
+- Continuer de merge de toute les parties de projet ensemble.<br>
+- Continuer la présentation PowerPoint.<br>
+- Débuter le cahier des charges.<br> 
+
+### 2022-06-08
+- Participer au scrum : Mise à jour de tout le monde.<br>
