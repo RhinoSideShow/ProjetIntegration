@@ -69,11 +69,12 @@ const Form = ({ formId, membreForm, forNewMembre = true }) => {
       }
       
       router.push('/')
+      //router.push(`/[id]`, as,  `/${membre._id}`)
+      //<Link href="/[id]" as={`/${membre._id}`}>
     } catch (error) {
       setMessage('Failed to add membre')
     }
   }
-
 
 
   const handleChange = (e) => {
@@ -186,13 +187,6 @@ const Form = ({ formId, membreForm, forNewMembre = true }) => {
           onChange={handleChange}
         />
 
-        <label htmlFor="payment">Payer cotisation annuelle: $1000. Cochez pour payer. </label>
-        <input
-          type="checkbox"
-          name="payment"
-          checked={form.payment}
-          onChange={handleChange}
-        />
 
         <button type="submit" className="btn">
           Soumettre
