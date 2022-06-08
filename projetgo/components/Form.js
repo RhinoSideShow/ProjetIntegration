@@ -11,9 +11,9 @@ const Form = ({ formId, membreForm, forNewMembre = true }) => {
   const [message, setMessage] = useState('')
 
   const [form, setForm] = useState({
-    name: membreForm.name,
-    lastname: membreForm.lastname,
-    email: membreForm.email,
+    _prenom: membreForm._prenom,
+    _nom: membreForm._nom,
+    _email: membreForm._email,
     telephone: membreForm.telephone,
     adresse: membreForm.adresse,
     password: membreForm.password,
@@ -105,9 +105,9 @@ const Form = ({ formId, membreForm, forNewMembre = true }) => {
   /* Makes sure membre info is filled */
   const formValidate = () => {
     let err = {}
-    if (!form.name) err.name = 'Name is required'
-    if (!form.lastname) err.lastname = 'Prenom is required'
-    if (!form.email) err.email = 'Email is required'
+    if (!form._prenom) err._prenom = 'Name is required'
+    if (!form._nom) err._nom = 'Prenom is required'
+    if (!form._email) err._email = 'Email is required'
     if (!form.telephone) err.telephone = 'Species is required'
     if (!form.adresse) err.adresse = 'Adresse is required'
     return err
@@ -121,9 +121,9 @@ const Form = ({ formId, membreForm, forNewMembre = true }) => {
         <input
           type="text"
           maxLength="60"
-          name="name"
+          name="_prenom"
           placeholder='Prénom'
-          value={form.name}
+          value={form._prenom}
           onChange={handleChange}
           required
         />
@@ -132,9 +132,9 @@ const Form = ({ formId, membreForm, forNewMembre = true }) => {
         <input
           type="text"
           maxLength="60"
-          name="lastname"
+          name="_nom"
           placeholder='Nom'
-          value={form.lastname}
+          value={form._nom}
           onChange={handleChange}
           required
         />
@@ -143,9 +143,9 @@ const Form = ({ formId, membreForm, forNewMembre = true }) => {
         <input
           type="text"
           maxLength="80"
-          name="email"
+          name="_email"
           placeholder='Email'
-          value={form.email}
+          value={form._email}
           onChange={handleChange}
           required
         />

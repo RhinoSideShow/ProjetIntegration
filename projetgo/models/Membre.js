@@ -3,14 +3,14 @@ import mongoose from 'mongoose';
 
 /* MembreSchema will correspond to a collection in your MongoDB database. */
 const MembreSchema = new mongoose.Schema({
-  name: {
+  _prenom: {
    
     type: String,
     required: [true, 'Entrez un nom .'],
     maxlength: [60, 'Name cannot be more than 60 characters'],
   },
 
-  lastname: {
+  _nom: {
    
     type: String,
     required: [true, 'Entrez le prénom .'],
@@ -18,7 +18,7 @@ const MembreSchema = new mongoose.Schema({
   },
   
   
-  email: {
+  _email: {
     
     type: String,
     required: [true, "Entrez le Email"],

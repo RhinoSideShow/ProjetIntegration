@@ -3,9 +3,9 @@ import Form from '../components/Form'
 const NewMembre = () => {
   const membreForm = {
 
-    name: '',
-    lastname: '',
-    email: '',
+    _prenom: '',
+    _nom: '',
+    _email: '',
     telephone: '',
     adresse: '',
     benevole: false,
