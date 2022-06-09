@@ -38,3 +38,10 @@
 
 ### 2022-06-08
 - Participer au scrum : Mise à jour de tout le monde.<br>
+- Continuer la présentation PowerPoint.<br>
+- Continuer le cahier des charges.<br>
+
+### 2022-06-09
+- Participer au scrum : Mise à jour de tout le monde et préparation pour présentation du projet.<br>
+- Continuer la présentation PowerPoint.<br>
+- Continuer le cahier des charges.<br>
